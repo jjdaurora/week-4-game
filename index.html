@@ -6,23 +6,52 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<title>Attack of the Codes</title>
 </head>
+
 <body>
 
 <div class="container">
-
-	<h1>Attack of the Codes</h1>
 	
-	<div class="row">
-		<div class="player-icons" id="player-html-5"><i class="fa fa-html5 fa-5x" aria-hidden="true"></i></div>
-		<div class="player-icons" id="player-css-3"><img src=""/><i class="fa fa-css3 fa-5x" aria-hidden="true"></i></div>
-		<div class="player-icons" id="player-python"><img src="images/python.png" width = 160px /></div>
-		<div class="player-icons" id="player-ruby"><img src="images/ruby.png" width = 160px /><img src=""/></div>
-	</div>
+	<h1 class="top-buffer">Attack of the Codes</h1>
+	
+	<section>
 
-	<div class="row">
-		<div id="player-spot"></div>
-		<div id="defenders-spot"></div>
-	</div>
+		<div class="row top-buffer">
+
+			<div class="col-md-6">
+				<div class="game-icons" id="player-python"></div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="game-icons" id="player-ruby"></div>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="game-health" id="health-python"></div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="game-health" id="health-ruby"></div>
+			</div>
+		</div>
+	
+	</section>
+
+	<section>
+		<div class="row top-buffer">
+			<div id="player-spot"></div>  
+		</div>
+		<div class="row">
+			<div id="defenders-spot"></div>
+		</div>
+	</section>
+	
+	<section>
+			<button  type ="button" class ="btn" id ="attack-button">Attack</button>
+	</section>
 
 </div>
 

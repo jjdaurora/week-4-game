@@ -1,38 +1,54 @@
-
-
 // 1. define an array of characters, health variables 
 
-var characters = ["html", "css", "python", "ruby"]
-var playerHealth = 100
-var opponentHealth = 100 
+var game = {
 	
-// 3. click a character to select it from the array 
+	python: {
+			power: 12, 
+			health: 100, 
+			src: '<img src="images/python.png" width=120 height: 120>',
+			name: "python",
+			},
+	
+	ruby: {
+		power: 1000, 
+		health: 100, 
+		src:'<img src="images/ruby.png" width=150 height: 140>', 
+		name: "ruby",
+		}
+	
+}
 
 
-(document).ready(function() {
-   var move = false;
-    $("#player-html-5").click(function() {
-      if (!move) {
-        $("#sidemenu").animate({left: "80px"});
-        sideMenu = true;
-      }
-      else {
-        $("#sidemenu").animate({left: "0px"});
-        sideMenu = false;     
-      }
-    });
-}); 
+	$("#player-python").html(game.python.src);
+	$("#player-ruby").html(game.ruby.src);
+	$("#health-python").html(game.python.health);
+	$("#health-ruby").html(game.ruby.health);
+	
+	 
 
 
-// 4. when a character is selected, it moves into the user's attacking position
+	$(".game-icons").on('click', function(){
+		var selectPlayer = true;
+		$(this).addClass('playerSelectBorder');
 
-// 5. when a character is selected, the available characters to attack move into the defending position
+		 
+		});
 
-// 6. when attack is selected, a random amount of the defender's health is dimished // while a random amount of the user's player health is dimished
 
-// 9. IF the user's health drops to 0, then game win --> "You lose!" Button: "Select a new opponent" --> User can select new opponent and repeat
+// var move = function () {
+// 	$(".game-icons").on('click', function(){
+		 
+// 		if($("#player-spot").children().length <= 0) {
+// 		$("#player-spot").append(this);	
+// 		}	
+// 	})
+// }
 
-// 10. IF the user's defenders health drops to 0, then game win > "You win!" --> Button: "Play Again!
+	// move ();
 
-// 11. IF the user defeats all opponent, then "GAME WINNER" --> remove all divs -> insert new div for "New Game?"
-
+	
+	$("#attack-button").on('click', function() {
+	var playerAttack = Math.floor(Math.random() * game.python.power);
+	game.ruby.health =- game.python.power
+		console.log(playerAttack);
+	}); 

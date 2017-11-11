@@ -4,4 +4,17 @@ body {
 
 .player-icons {
 	margin: auto;
+	font-size: 1.5em;
+}
+
+.top-buffer {
+	margin-top: 150px;
+
+}
+
+.playerSelectBorder {
+	border-color: green;
+	border-width: 10px;
+	border-style: solid;
+
 }
