@@ -15,43 +15,66 @@
 	
 	<section>
 
-		<div class="row top-buffer">
+		<div class="row">
 
-			<div class="col-md-6">
+			<div class="col-md-3">
 				<div class="game-icons" id="player-python"></div>
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-md-3">
 				<div class="game-icons" id="player-ruby"></div>
 			</div>
 
-		</div>
-
-		<div class="row">
-
-			<div class="col-md-6">
-				<div class="game-health" id="health-python"></div>
+			<div class="col-md-3">
+				<div class="game-icons" id="player-html"></div>
 			</div>
 
-			<div class="col-md-6">
-				<div class="game-health" id="health-ruby"></div>
+			<div class="col-md-3">
+				<div class="game-icons" id="player-css"></div>
 			</div>
+
 		</div>
 	
 	</section>
 
-	<section>
+	<section class="attack-zone">
+
 		<div class="row top-buffer">
-			<div id="player-spot"></div>  
+			<div class="col-md-2">
+				<div id="player-spot"></div>  
+			</div>
+			<div class="col-md-2">
+				<h3 id="player-health"></h3>  
+			</div>
+			<div class="col-md-4">
+				<button type="button" class="btn btn-danger">Attack</button>  
+			</div>
+			<div class="col-md-2">
+				<h3 id="defender-health"></h3>   
+			</div>
+			<div class="col-md-2">
+				<div id="defender-spot"></div>
+			</div>
 		</div>
+
+	</section>
+
+	<section class="message-center top-buffer">
+
 		<div class="row">
-			<div id="defenders-spot"></div>
+			<div class="col-md-4">
+				<h3 id="choose-player-message"></h3>
+			</div>
+			<div class="col-md-4">
+				<h3 id="attack-start-message"></h3>
+			</div>
+			<div class="col-md-4">
+				<h3 id="choose-defender-message"></h3>
+			</div>
 		</div>
+
 	</section>
 	
-	<section>
-			<button  type ="button" class ="btn" id ="attack-button">Attack</button>
-	</section>
 
 </div>
 
