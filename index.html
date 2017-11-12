@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="https://use.fontawesome.com/129261c3b8.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<title>Attack of the Codes</title>
@@ -40,21 +39,17 @@
 	<section class="attack-zone">
 
 		<div class="row top-buffer">
-			<div class="col-md-2">
+			
+			<div class="col-md-5">
 				<div id="player-spot"></div>  
-			</div>
+			</div>			
 			<div class="col-md-2">
-				<h3 id="player-health"></h3>  
+				<button type="button" class="btn btn-danger" id="attack-button">Attack</button>  
 			</div>
-			<div class="col-md-4">
-				<button type="button" class="btn btn-danger">Attack</button>  
-			</div>
-			<div class="col-md-2">
-				<h3 id="defender-health"></h3>   
-			</div>
-			<div class="col-md-2">
+			<div class="col-md-5">
 				<div id="defender-spot"></div>
 			</div>
+
 		</div>
 
 	</section>
@@ -66,7 +61,7 @@
 				<h3 id="choose-player-message"></h3>
 			</div>
 			<div class="col-md-4">
-				<h3 id="attack-start-message"></h3>
+				<h3 id="game-message"></h3>
 			</div>
 			<div class="col-md-4">
 				<h3 id="choose-defender-message"></h3>
